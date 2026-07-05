@@ -1,0 +1,45 @@
+.hero {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.sec{
+    max-width: 900px;
+    margin: 10px auto 10px auto;
+}
+
+.sec h3 {
+    color: #ff8c00;
+    margin-bottom: 15px;
+}
+.sec p {
+    line-height: 1.6;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background-color: #286bcf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+.card h4 {
+    margin-bottom: 10px;
+    color: #ff8c00;
+}

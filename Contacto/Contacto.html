@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Digimon Web</title>
+    <link rel="icon" href="/Imagenes/Main/icon.png" type="image/png">
+    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="../main/nav-style.css">
+    <link rel="stylesheet" href="../main/portada.css">
+    <link rel="stylesheet" href="../main/footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header class="site-header" id="cont-up">
+            <div class="header__content--flow">
+                <section class="header-content--left">
+                    <a href="../inicio.html" class="brand-logo">
+                        <img src="../Imagenes/Main/LOGO.png" width="200px">
+                    </a>
+                    <button class="nav-toggle">
+                        <span class="toggle--icon"></span>
+                    </button>
+                </section>
+                <section class="header-content--right">
+                    <nav class="header-nav" role="navigation">
+                        <ul class="nav__list" aria-expanded="false">
+                            <li class="list-item">
+                                <a class="nav__link" href="../inicio.html">inicio</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../Protagonistas/protagonistas.html">protagonistas</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../Digimon/digimon-app-v1/digimon-v1.html">digimon</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../Contacto/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="section grid grid-2">
+                <div>
+                    <h1 class="h1">Ponte en contacto</h1>
+                    <p class="lead">Cuéntame brevemente qué necesitas y te respondo en menos de 24 horas.</p>
+                    <form class="card" onsubmit="event.preventDefault();" id="form">
+                        <div class="form-row form-row-2">
+                            <div class="field">
+                                <label for="nombre">Nombre</label>
+                                <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                            </div>
+                            <div class="field">
+                                <label for="email">Correo</label>
+                                <input class="input" type="email" id="email" name="email" placeholder="tu@correo.com" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="asunto">Asunto</label>
+                                <input class="input" type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                            </div>
+                        </div>
+                        <input class="btn btn-primary" type="submit" id="button" value="Enviar">
+                    </form>
+                    
+                </div>
+                <aside>
+                    <div class="card">
+                        <h3>Otros medios</h3>
+                        <ul class="list">
+                            <li><strong>Email:</strong> moralesjunior04@gmail.com</li>
+                            <li><strong>Teléfono:</strong> +1 (829)671-4121</li>
+                            <li><strong>LinkedIn:</strong> linkedin.com/in/ejmb</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="margin-top:12px;">
+                        <h3>Disponibilidad</h3>
+                        <p class="lead">Lunes a viernes · 9:00 a.m. – 10:00 p.m.</p>
+                    </div>
+                </aside>
+            </section>
+        </div>
+        <a href="#cont-up" id="btn-up" class="boton-subir"><ion-icon name="arrow-up-outline"></ion-icon></a>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a href="https://www.youtube.com/@DIGIMONofficialJP" target="_blank" class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.instagram.com/digimonanimeofficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.tiktok.com/@toeianimationofficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://web.facebook.com/DigimonOfficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://x.com/toeianimation" target="_blank" class="icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li class="menu-elem">
+                    <a href="https://digimon.net/" class="menu-icon"> Web </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://digimon.net/digimoncomic/" class="menu-icon"> Digimon Comic </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://www.toei-anim.co.jp/tv/digimon_beatbreak/" class="menu-icon"> Digimon Beatbreak </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://digimon-anime.com/" class="menu-icon"> Portal Anime </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://en.wikipedia.org/wiki/Digimon" class="menu-icon"> Wiki </a>
+                </li>
+            </ul>
+            <p class="text">©2026 Tohei Animation | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('V4crl1IgRau_EZ4NR')</script>
+    <script src="../main/script-nav.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

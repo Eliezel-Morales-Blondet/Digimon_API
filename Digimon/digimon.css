@@ -1,0 +1,156 @@
+.digimon-container{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.digimon-card, .modal{ 
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.digimon-imagen{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.digimon-imagen img{ 
+    width: 100%;
+    max-width: 10rem;
+    border-radius: 1.2rem;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.digimon-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+    padding-inline: 1rem;
+}
+
+.digimon-card:hover{ 
+    transform: translateY(-.25rem);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+.digimon-nombre{
+    display: flex;
+    font-size: 15px;
+    column-gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.digimon-attribute, .digimon-type, .digimon-fields{
+    display: flex;
+    gap: .5rem;
+    font-size: .75rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.digimon-btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.digi-btn{
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    transition: .2s;
+    background-color: #705848;
+    color: #f7f7f7;
+}
+
+.digi-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+
+#Todos{
+    background-color: #ececec;
+    color: #000;
+
+}
+
+.digimon-nivel{
+    border-radius: 100vmax;
+    padding-inline: .5rem;
+    background-color: #705848;
+    color: #f7f7f7;
+}
+
+#Rookie, .Rookie{
+    background-color: #C03028;
+    color: #f7f7f7;
+}
+
+#Champion, .Champion{
+    background-color: #6890F0;
+    color: #f7f7f7;
+}
+
+#Fresh, .Fresh{
+    background-color: #B8B8D0;
+    color: #000;
+}
+
+#Armor, .Armor{
+    background-color: #FFD700;
+    color: #000;
+}
+
+#Mega, .Mega{
+    background-color: #FFFF00;
+    color: #000;
+}
+
+#Ultimate, .Ultimate{
+    background-color: #7038F8;
+    color: #f7f7f7;
+}
+
+#In Training{
+    background-color: #705848;
+}
+
+
+
+@media screen and (min-width: 470px) {
+    .digimon-container { 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .digimon-container { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Digimon Web</title>
+    <link rel="icon" href="/Imagenes/Main/icon.png" type="image/png">
+    <link rel="stylesheet" href="../../main/main.css">
+    <link rel="stylesheet" href="../../main/nav-style.css">
+    <link rel="stylesheet" href="../../main/portada.css">
+    <link rel="stylesheet" href="../../main/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../digimon.css">
+    <link rel="stylesheet" href="../digimon-search.css">
+    <link rel="stylesheet" href="../digimon-modal.css">
+</head>
+<body>
+    <main>
+        <header class="site-header" id="cont-up">
+            <div class="header__content--flow">
+                <section class="header-content--left">
+                    <a href="../../inicio.html" class="brand-logo">
+                        <img src="../../Imagenes/Main/LOGO.png" width="200px">
+                    </a>
+                    <button class="nav-toggle">
+                        <span class="toggle--icon"></span>
+                    </button>
+                </section>
+                <section class="header-content--right">
+                    <nav class="header-nav" role="navigation">
+                        <ul class="nav__list" aria-expanded="false">
+                            <li class="list-item">
+                                <a class="nav__link" href="../../inicio.html">inicio</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../../Protagonistas/protagonistas.html">protagonistas</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../digimon-app-v1/digimon-v1.html">digimon</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="nav__link" href="../../Contacto/Contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </header>
+        <div class="container">
+            <div class="digimon-control"> 
+                <div class="digimon-buscador"> 
+                    <form>
+                        <div class="digimon-filtro">
+                            <div class="digi-icon-filter">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/>
+                                </svg>
+                                <span>Filtrar</span>
+                            </div>
+                        </div>
+                        <div class="digimon-search-bar">
+                            <svg xmlns="http://www.w3.org/2000/svg"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-search">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+                            </svg>
+                            <input type="search" placeholder="Buscar Nombre" id="digi-search-id"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mostrar-digimon">
+                <div class="digimon-container" id="listado-digimon">
+                    
+                </div>
+            </div>
+            <div class="digimon-filtros">
+                <form class="digimon-filtro-tipos">
+                    <ion-icon name="close-circle-outline" class="digimon-filtro-close"></ion-icon>
+                    <span>Nivel:</span>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="In Training" value="In Training" class="filtro-box"/>
+                        <label for="In Training">In Training</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Fresh" value="Fresh" class="filtro-box"/>
+                        <label for="Fresh">Fresh</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Rookie" value="Rookie" class="filtro-box"/>
+                        <label for="Rookie">Rookie</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Champion" value="Champion" class="filtro-box"/>
+                        <label for="Champion">Champion</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Armor" value="Armor" class="filtro-box"/>
+                        <label for="Armor">Armor</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Mega" value="Mega" class="filtro-box"/>
+                        <label for="Mega">Mega</label>
+                    </div>
+                    <div class="digi-tipo">
+                        <input type="checkbox" name="Ultimate" value="Ultimate" class="filtro-box"/>
+                        <label for="Ultimate">Ultimate</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#cont-up" id="btn-up" class="boton-subir"><ion-icon name="arrow-up-outline"></ion-icon></a>
+    </main>
+    <footer>
+        <div class="footer">
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a href="https://www.youtube.com/@DIGIMONofficialJP" target="_blank" class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.instagram.com/digimonanimeofficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://www.tiktok.com/@toeianimationofficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://web.facebook.com/DigimonOfficial" target="_blank" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a href="https://x.com/toeianimation" target="_blank" class="icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li class="menu-elem">
+                    <a href="https://digimon.net/" target="_blank" class="menu-icon"> Web </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://digimon.net/digimoncomic/" target="_blank"class="menu-icon"> Digimon Comic </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://www.toei-anim.co.jp/tv/digimon_beatbreak/" target="_blank" class="menu-icon"> Digimon Beatbreak </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://digimon-anime.com/" class="menu-icon" target="_blank"> Portal Anime </a>
+                </li>
+                <li class="menu-elem">
+                    <a href="https://en.wikipedia.org/wiki/Digimon" target="_blank" class="menu-icon"> Wiki </a>
+                </li>
+            </ul>
+            <p class="text">©2026 Tohei Animation | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="main-api.js"></script>
+    <script src="../../main/script-nav.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

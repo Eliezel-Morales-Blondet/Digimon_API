@@ -1,0 +1,163 @@
+.digimon-control{ 
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.digimon-buscador{ 
+    
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    gap: 15px;
+    border: 1px solid #555;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.digimon-buscador form{ 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.digimon-search-bar{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #555;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+
+.digimon-search-bar input{
+    font-family: inherit;
+    width: 750px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #f5f5f5;
+}
+
+.icon-search{
+    width: 20px;
+    height: 20px;
+    stroke: #555;
+}
+
+.digimon-btn-search{
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-family: inherit;
+    padding: 15px 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: #ff8c00;
+    color: #fff;
+}
+
+.digimon-btn-search:hover{
+    background-color: #ffd700;
+    color: #000;
+}
+
+.digimon-filtro{ 
+    display: flex;
+    flex-direction: row-reverse;
+}
+.digimon-filtro-close{
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.digi-icon-filter{ 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.digi-icon-filter span{
+    margin-top: 20px;
+}
+.digi-icon-filter .icon{
+    width: 30px;
+    height: 30px;
+    stroke: #555;
+    margin-top: 20px;
+}
+
+.digimon-filtros{ 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 150px;
+    box-shadow: 0 0.1875em 0.3125em #0003, 0 0.125em 0.5em #0002;
+    color: #555;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding-top: 140px;
+    transition: all .3s linear;
+}
+
+.digimon-filtros.active{
+    left: 0;
+}
+
+.digimon-filtro-tipos{ 
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.digimon-filtro-tipos span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.digi-tipo{
+    display: flex;
+    gap: 10px;
+
+    margin-left: 15px ;
+}
+
+@media screen and (max-width: 1000px){
+    .digimon-search-bar input{
+        width: 500px;
+    }
+}
+
+.filtro-box{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    .digimon-search-bar input{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .digimon-search-bar input{
+        width: 120px;
+    }
+
+    .digi-icon-filter, .digimon-search-bar{
+        flex-direction: column;
+    }
+    .digi-icon-filter span{
+        margin-top: 0;
+    }
+}
